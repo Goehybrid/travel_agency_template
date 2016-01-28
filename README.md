@@ -1,1 +1,3 @@
-# travel_agency_template
+# Travel agency template
+
+A slick and mobile-friendly website
