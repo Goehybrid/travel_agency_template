@@ -1,6 +1,6 @@
 # Travel agency template
 
-A slick and mobile-friendly website
+Slick and mobile-friendly website
 
 [Full version]
 
