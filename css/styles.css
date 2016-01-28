@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Philosopher);
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.visible {
+  display: inline-block !important;
+}
+#main-wrapper {
+  background-color: rgba(128, 128, 128, 0.33);
+  font-family: "Philosopher";
+}
+#main-wrapper #page-header {
+  position: relative;
+  background-color: #0285c6;
+}
+#main-wrapper #page-header header#header-text {
+  display: inline-block;
+  width: 39%;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #page-header header#header-text {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+  }
+}
+#main-wrapper #page-header header#header-text h1 {
+  margin-left: 130px;
+  font-family: Lobster;
+  font-size: 60px;
+  color: white;
+}
+@media only screen and (max-width: 1115px) {
+  #main-wrapper #page-header header#header-text h1 {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #page-header header#header-text h1 {
+    margin: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #page-header header#header-text h1 {
+    margin-left: 10px;
+    text-align: left;
+  }
+}
+#main-wrapper #page-header nav#navigation-bar {
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+  padding-right: 130px;
+}
+@media only screen and (max-width: 1115px) {
+  #main-wrapper #page-header nav#navigation-bar {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #page-header nav#navigation-bar {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #page-header nav#navigation-bar {
+    display: none;
+  }
+}
+#main-wrapper #page-header nav#navigation-bar ul {
+  color: white;
+  font-size: 20px;
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #page-header nav#navigation-bar ul {
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #page-header nav#navigation-bar ul {
+    padding: 0 0 10px 0;
+  }
+}
+#main-wrapper #page-header nav#navigation-bar ul li {
+  display: inline;
+  margin-right: 20px;
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #page-header nav#navigation-bar ul li {
+    display: inline-block;
+    margin: 0 20px 0 20px;
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #page-header nav#navigation-bar ul li {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+#main-wrapper #page-header nav#navigation-bar ul li a:link,
+#main-wrapper #page-header nav#navigation-bar ul li a:visited {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bolder;
+}
+#main-wrapper #page-header nav#navigation-button {
+  display: none;
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #page-header nav#navigation-button {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+}
+#main-wrapper #jumbotron {
+  position: relative;
+  height: 450px;
+  background: #000 url("../img/jumbotron.jpg") center center;
+  background-size: cover;
+  overflow: hidden;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #jumbotron {
+    height: 300px;
+  }
+}
+#main-wrapper #jumbotron header {
+  position: absolute;
+  right: 165px;
+  top: 40px;
+}
+@media only screen and (max-width: 1115px) {
+  #main-wrapper #jumbotron header {
+    right: 50px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  #main-wrapper #jumbotron header {
+    top: 15px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #jumbotron header {
+    top: 15px;
+    right: 5px;
+  }
+}
+#main-wrapper #jumbotron header h2 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 3px 4px #0285c6;
+}
+#main-wrapper #jumbotron header h3 {
+  display: none;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 3px 4px #0285c6;
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #jumbotron header h3 {
+    text-align: right;
+    margin-right: 35px;
+  }
+}
+#main-wrapper #main-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #0285c6;
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content {
+    flex-direction: column;
+  }
+}
+#main-wrapper #main-content section {
+  width: 420px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content section {
+    width: auto;
+    margin: 10px 10px 6px 10px;
+  }
+}
+#main-wrapper #main-content section header {
+  margin: 20px;
+}
+#main-wrapper #main-content section header h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Lobster';
+  font-size: 25px;
+  color: #0285c6;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content section header h3 {
+    font-size: 35px;
+  }
+}
+#main-wrapper #main-content section figure {
+  margin: 20px;
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content section figure {
+    margin: 0 15px 0 20px;
+    width: 350px;
+    float: left;
+  }
+}
+@media only screen and (max-width: 590px) {
+  #main-wrapper #main-content section figure {
+    width: auto;
+    float: none;
+    margin: 0 20px 10px 20px;
+  }
+}
+#main-wrapper #main-content section figure img {
+  width: 100%;
+  border-radius: 10px;
+}
+#main-wrapper #main-content section p {
+  margin: 0 20px 20px 20px;
+  text-align: justify;
+  line-height: 1.5;
+  color: #0071b2;
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content section p {
+    font-size: 22px;
+    margin-top: -7px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content section p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 930px) {
+  #main-wrapper #main-content section:last-child {
+    margin-bottom: 12px;
+  }
+}
+#main-wrapper #page-footer {
+  width: 100%;
+  padding: 10px 0 10px 0;
+  background-color: #0285c6;
+  text-align: center;
+  color: white;
+  border-top: 2px solid white;
+}
